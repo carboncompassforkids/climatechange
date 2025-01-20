@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="styles.css">
+   <title>Carbon Footprint Calculator</title>
+   <script src="https://kit.fontawesome.com/d59439e8f2.js" crossorigin="anonymous"></script>
+   <link
+     href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap"
+     rel="stylesheet"
+   />
+   <script type="text/javascript"
+       src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+   </script>
+   <script type="text/javascript">
+   (function(){
+       emailjs.init({
+           publicKey: "bnD-2Vs2FsyNJCxKi",
+       });
+   })();
+</script>
+<style>
+  body {
+    margin: 0;
+    background-color: #141414; /* Ensure consistent dark background */
+  }
+
+  .carbon-calculator {
+    font-size: 0.9rem;
+    min-height: 200vh; /* Increase page height */
+    padding: 2rem; /* Add padding for content spacing */
+    background-color: #141414; /* Match the background color */
+    color: white; /* Ensure all text is white */
+  }
+
+  .carbon-calculator__result {
+    max-width: 85%; /* Narrower box for better fit */
+    margin: 3rem auto; /* Center the result and add spacing */
+    padding: 1rem;
+    border: 1px solid #ddd;
+    background-color: #000; /* Ensure consistent background */
+    text-align: center;
+  }
+
+  .footer__container {
+    background-color: #141414; /* Match the section background */
+    margin-top: 2rem; /* Space from the calculator */
+    padding: 2rem 0;
+  }
+
+  .footer__container p {
+    color: white;
+  }
+</style>
+</head>
+<body>
+  <header>
+    <nav class="navbar">
+        <div class="navbar__container">
+            <a href="index.html" id="navbar__logo">
+                <i class="fa-solid fa-earth-americas"></i>Climate Change
+            </a>
+            <ul class="navbar__menu">
+                <li class="navbar__item">
+                    <a href="index.html" class="navbar__links">Home</a>
+                </li>
+                <li class="navbar__item">
+                    <a href="calculator.html" class="navbar__links">Carbon Footprint Calculator</a>
+                </li>
+                <li class="navbar__item">
+                    <a href="bestPractices.html" class="navbar__links">Best Practices</a>
+                </li>
+                <li class="navbar__item">
+                    <a href="articles.html" class="navbar__links">Articles</a>
+                </li>
+                <li class="navbar__item">
+                    <a href="organizations.html" class="navbar__links">Organizations</a>
+                </li>
+            </ul>
+            <div class="navbar__toggle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+</header>
+   <div class="carbon-calculator">
+       <h2>Carbon Footprint Calculator</h2>
+       <p> A person's Carbon Footprint is the total amount of greenhouse gasses released into the atmosphere that is a result of their actions and decisions. To prevent the effects of climate change, people should try to reduce their carbon footprint. </p> <br> 
+       <p> However, we have to first determine what your carbon footprint is and some main areas that you can improve on. Please answer these few questions about actions/decisions your family makes on a daily, weekly, or yearly basis. This calculator will approximate the tons of carbon that your family is responsible annually.</p>
+       <form class="carbon-calculator__form" id="footprintForm">
+           <h1>Household</h1>
+           <br>
+           <div class="carbon-calculator__form-group">
+               <label for="timesShower">Showers in household per day: </label>
+               <input type="number" id="timesShower" name="shower" required>
+           </div>
+           <div class="carbon-calculator__form-group">
+               <label for="timesLaundry">How many times does your household do laundry per week: </label>
+               <input type="number" id="timesLaundry" name="laundry" required>
+           </div>
+           <div class="carbon-calculator__form-group">
+               <label for="timesGarbage">How many bags of garbage do you throw in a week: </label>
+               <input type="number" id="timesGarbage" name="garbage" required>
+           </div>
+           <div class="carbon-calculator__form-group">
+               <label for="timesFastFood">How many times do you eat fast food in a week: </label>
+               <input type="number" id="timesFastFood" name="fastfood" required>
+           </div>
+           <h1>Transport</h1>
+           <br>
+           <div class="carbon-calculator__form-group">
+               <label for="timesFlying">How many times do you fly in a year: </label>
+               <input type="number" id="timesFlying" name="flying" required>
+           </div>
+           <div class="carbon-calculator__form-group">
+               <label for="timesDriving">How many times do you drive in a week: </label>
+               <input type="number" id="timesDriving" name="driving" required>
+           </div>
+           <div class="carbon-calculator__form-group">
+               <label for="numberCars">How many cars do you own: </label>
+               <input type="number" id="numberCars" name="cars" required>
+           </div>
+           <br>
+           <br>
+           <button type="submit" class="carbon-calculator__submit">Calculate</button>
+       </form>
+       <div class="carbon-calculator__result" id="result">
+       </div>
+       <br>
+       <p>By comparison, the average carbon footprint of one person is 5.5 tons of carbon per year. In the US, the number is around 14 tons per person per year.</p>
+   </div>
+   <div class="footer__container">
+       <section class="social__media">
+         <div class="social__media--wrap">
+           <div class="footer__logo">
+             <a href="/" id="footer__logo"><i class="fas fa-gem"></i>Climate Change</a>
+           </div>
+           <p class="website__rights">© Climate Change 2024. All rights reserved</p>
+         </div>
+       </section>
+     </div>
+   <script src="app.js"></script>
+</body>
+</html>

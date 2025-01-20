@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Best Practices</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <script src="https://kit.fontawesome.com/d59439e8f2.js" crossorigin="anonymous"></script>
+  <body style="background-color: black; color: white;">
+    <nav class="navbar">
+      <div class="navbar__container">
+        <a href="index.html" id="navbar__logo">
+          <i class="fa-solid fa-earth-americas"></i>Climate Change
+        </a>
+        <div class="navbar__toggle" id="mobile-menu">
+          <span class="bar"></span> <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
+        <ul class="navbar__menu">
+          <li class="navbar__item">
+            <a href="index.html" class="navbar__links" style="color: white;">Home</a>
+          </li>
+          <li class="navbar__item">
+            <a href="calculator.html" class="navbar__links" style="color: white;">Carbon Footprint Calculator</a>
+          </li>
+          <li class="navbar__item">
+            <a href="bestPractices.html" class="navbar__links" style="color: white;">Best Practices</a>
+          </li>
+          <li class="navbar__item">
+            <a href="articles.html" class="navbar__links" style="color: white;">Articles</a>
+          </li>
+          <li class="navbar__item">
+            <a href="organizations.html" class="navbar__links" style="color: white;">Organizations</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- Main Content -->
+    <div style="padding: 20px;">
+      <h1
+        style="
+          background-color: #ff8177;
+          background-image: linear-gradient(
+            to right,
+            #ff8177 0%,
+            #ff867a 0%,
+            #ff8c7f 21%,
+            #f99185 52%,
+            #cf556c 78%,
+            #b12a5b 100%
+          );
+          background-size: 100%;
+          -webkit-background-clip: text;
+          -moz-background-clip: text;
+          -webkit-text-fill-color: transparent;
+          -moz-text-fill-color: transparent;
+          margin-bottom: 20px;
+        "
+      >
+        Best Practices
+      </h1>
+      <div
+        class="container"
+        style="display: flex; justify-content: space-between; gap: 20px;"
+      >
+        <!-- Left Section -->
+        <aside
+          class="sidebar"
+          style="width: 48%; overflow-y: auto; padding-right: 10px;"
+        >
+          <div class="sidebar-content">
+            <div class="orgs__container">
+              <section class="orgs__section" style="margin-bottom: 30px;">
+                <img
+                  src="/images/colorFoodIcon.png"
+                  alt="Food Icon"
+                  class="orgs__icon"
+                />
+                <h2 style="color: white;">Food Choices</h2>
+                <p style="color: white;">
+                  Reduce Fast Foods. Vegan or vegetarian options are better for the climate.
+                  Minimize waste of food.
+                </p>
+              </section>
+              <section class="orgs__section" style="margin-bottom: 30px;">
+                <img
+                  src="/images/colorFlyingIcon.png"
+                  alt="Flying Icon"
+                  class="orgs__icon"
+                />
+                <h2 style="color: white;">Air Travel</h2>
+                <p style="color: white;">
+                  Air Travel is one of the highest polluters and generators of greenhouse gases.
+                  Consider alternate transportation options and make smart travel plans.
+                </p>
+              </section>
+              <section class="orgs__section">
+                <img
+                  src="/images/colorCarIcon.png"
+                  alt="Car Icon"
+                  class="orgs__icon"
+                />
+                <h2 style="color: white;">Commuting</h2>
+                <p style="color: white;">
+                  Try commuting through public transport when possible. Rideshare or carpool.
+                  Consider biking or walking.
+                </p>
+              </section>
+            </div>
+          </div>
+        </aside>
+
+        <!-- Right Section -->
+        <aside
+          class="sidebarRight"
+          style="width: 48%; overflow-y: auto; padding-left: 10px;"
+        >
+          <div class="sidebar-content">
+            <div class="orgs__container">
+              <section class="orgs__section" style="margin-bottom: 30px;">
+                <img
+                  src="/images/colorShowerIcon.jpeg"
+                  alt="Shower Icon"
+                  class="orgs__icon"
+                />
+                <h2 style="color: white;">Showers and Baths</h2>
+                <p style="color: white;">
+                  Take quicker showers as opposed to baths. Don't leave tap running.
+                </p>
+              </section>
+              <section class="orgs__section" style="margin-bottom: 30px;">
+                <img
+                  src="/images/colorLaundryIcon.png"
+                  alt="Laundry Icon"
+                  class="orgs__icon"
+                />
+                <h2 style="color: white;">Household Appliances</h2>
+                <p style="color: white;">
+                  Unplug appliances and chargers when not in use.
+                </p>
+                <p style="color: white;">
+                  Don’t wash clothes or dishes if load is not full.
+                </p>
+              </section>
+              <section class="orgs__section">
+                <img
+                  src="/images/colorGarbageIcon.png"
+                  alt="Garbage Icon"
+                  class="orgs__icon"
+                />
+                <h2 style="color: white;">Reduce and Reuse</h2>
+                <p style="color: white;">
+                  Recycle and buy recycled products. Reduce purchase of disposable water bottles.
+                </p>
+                <p style="color: white;">
+                  Pass along or share products that can have another life.
+                </p>
+              </section>
+            </div>
+          </div>
+        </aside>
+      </div>
+    </div>
+
+    <div class="footer__container">
+      <section class="social__media">
+        <div class="social__media--wrap">
+          <div class="footer__logo">
+            <a href="/" id="footer__logo" style="color: white;">
+              <i class="fas fa-gem"></i>Climate Change
+            </a>
+          </div>
+          <p class="website__rights" style="color: white;">© Climate Change 2024. All rights reserved</p>
+
+      </section>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>

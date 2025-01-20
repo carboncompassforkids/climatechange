@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Articles</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body style="background-color: #000000;"> <!-- Set background color to black -->
+    <nav class="navbar">
+      <div class="navbar__container">
+        <a href="index.html" id="navbar__logo">
+          <i class="fa-solid fa-earth-americas"></i>Climate Change
+        </a>
+        <div class="navbar__toggle" id="mobile-menu">
+          <span class="bar"></span> <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
+        <ul class="navbar__menu">
+          <li class="navbar__item">
+            <a href="index.html" class="navbar__links">Home</a>
+          </li>
+          <li class="navbar__item">
+            <a href="calculator.html" class="navbar__links">Carbon Footprint Calculator</a>
+          </li>
+          <li class="navbar__item">
+            <a href="bestPractices.html" class="navbar__links">Best Practices</a>
+          </li>
+          <li class="navbar__item">
+            <a href="articles.html" class="navbar__links">Articles</a>
+          </li>
+          <li class="navbar__item">
+            <a href="organizations.html" class="navbar__links">Organizations</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- Main Content -->
+    <div class="blogs" style="min-height: 170vh; margin-bottom: 0; padding-bottom: 50px;">
+      <h1 style="margin-bottom: 50px;">Latest Articles</h1>
+      <div class="blogs__container" style="gap: 70px; padding-bottom: 20px;"> <!-- Increased spacing -->
+        <!-- Article 1 -->
+        <div class="blogs__card" style="height: 380px; margin-bottom: 40px;"> <!-- Adjusted card margin -->
+          <h2>SCIAM</h2>
+          <p>
+            Singapore Airlines Turbulence: Why Climate Change Is Making Flights Rougher
+          </p>
+          <button>READ</button>
+          <button type="button" onclick="location.href='https://www.scientificamerican.com/article/singapore-airlines-turbulence-why-climate-change-is-making-flights-rougher/'">READ</button>
+        </div>
+        <!-- Article 2 -->
+        <div class="blogs__card" style="height: 380px; margin-bottom: 40px;"> <!-- Adjusted card margin -->
+          <h2>CNN</h2>
+          <p>Climate change will make you poorer, according to a new report</p>
+          <button>READ</button>
+          <button type="button" onclick="location.href='https://www.cnn.com/2024/04/17/business/climate-change-disasters-economic-cost/index.html'">Read</button>
+        </div>
+        <!-- Article 3 -->
+        <div class="blogs__card" style="height: 380px; margin-bottom: 40px;"> <!-- Adjusted card margin -->
+          <h2>BLOOMBERG</h2>
+          <p>
+            Rotten Bananas in a Scorching India Expose Climate's Food Cost
+          </p>
+          <button>READ</button>
+          <button type="button" onclick="location.href='https://www.bloomberg.com/news/features/2024-05-24/india-heat-waves-linked-to-climate-change-cause-massive-food-waste'">READ</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <div class="footer__container" style="background-color: #000000;"> <!-- Extend black background -->
+      <section class="social__media">
+        <div class="social__media--wrap">
+          <div class="footer__logo">
+            <a href="/" id="footer__logo">
+              <i class="fas fa-gem"></i>Climate Change
+            </a>
+          </div>
+          <p class="website__rights">© Climate Change 2024. All rights reserved</p>
+          <div class="social__icons">
+            <a
+              class="social__icon--link"
+              href="/"
+              target="_blank"
+              aria-label="Facebook"
+            >
+              <i class="fab fa-facebook"></i>
+            </a>
+            <a
+              class="social__icon--link"
+              href="/"
+              target="_blank"
+              aria-label="Instagram"
+            >
+              <i class="fab fa-instagram"></i>
+            </a>
+            <a
+              class="social__icon--link"
+              href="https://www.youtube.com/watch?v=G4H1N_yXBiA"
+              target="_blank"
+              aria-label="YouTube"
+            >
+              <i class="fab fa-youtube"></i>
+            </a>
+            <a
+              class="social__icon--link"
+              href="/"
+              target="_blank"
+              aria-label="Twitter"
+            >
+              <i class="fab fa-twitter"></i>
+            </a>
+            <a
+              class="social__icon--link"
+              href="/"
+              target="_blank"
+              aria-label="LinkedIn"
+            >
+              <i class="fab fa-linkedin"></i>
+            </a>
+          </div>
+        </div>
+      </section>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>
